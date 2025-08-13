@@ -8,6 +8,15 @@
 -- 4. `"Atomic Habits"`, `"James Clear"`, `18.75`
 -- 5. `"Deep Work"`, `"Cal Newport"`, `27.45`
 
+book_store_db=# INSERT INTO books (title, author, price)
+book_store_db-# VALUES
+book_store_db-#     ('Clean Code', 'Robert C. Martin', 25.50),
+book_store_db-#     ('The Pragmatic Programmer', 'Andrew Hunt', 30.00),
+book_store_db-#     ('Python Crash Course', 'Eric Matthes', 22.99),
+book_store_db-#     ('Atomic Habits', 'James Clear', 18.75),
+book_store_db-#     ('Deep Work', 'Cal Newport', 27.45);
+
+
 book_store_db=# SELECT * FROM books;
 
  id |          title           |      author      | price | is_availabe
